@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adaptive Over Parameterization</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <h1>Adaptive Over Parameterization</h1>
+  <p class="subtitle">
+    Let the model decide where complexity is needed instead of fixing capacity upfront.
+  </p>
+</header>
+
+<main>
+
+<section>
+  <h2>Motivation</h2>
+  <p>
+    Most models are either under parameterized everywhere or over parameterized everywhere.
+    Both are inefficient.
+  </p>
+  <p>
+    This experiment explores whether capacity can be treated as a <em>dynamic resource</em> —
+    allocated, gated, or amplified only where the signal demands it.
+  </p>
+</section>
+
+<section>
+  <h2>Core Idea</h2>
+  <p>
+    Instead of tuning model size globally, I investigate mechanisms where:
+  </p>
+  <ul>
+    <li>multiple competing readouts exist simultaneously</li>
+    <li>gating determines which representations matter per input</li>
+    <li>unused capacity remains dormant rather than optimized</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Why This Matters</h2>
+  <p>
+    In noisy, short horizon, or non stationary domains, signal strength fluctuates.
+    Fixed architectures assume it does not.
+  </p>
+  <p>
+    Adaptive over parameterization reframes model capacity as a decision problem
+    rather than a hyperparameter.
+  </p>
+</section>
+
+<section>
+  <h2>Status</h2>
+  <p>
+    Ongoing. Early results suggest improved stability under distribution shift,
+    with lower effective parameter usage than static baselines.
+  </p>
+</section>
+
+<section>
+  <h2>Related Work</h2>
+  <p>
+    This work intersects ideas from conditional computation, mixture-of-experts,
+    and meta learning, but focuses on <strong>where complexity lives</strong>,
+    not just how outputs are combined.
+  </p>
+</section>
+
+<footer>
+  <p><a href="../index.html">← Back to overview</a></p>
+</footer>
+
+</main>
+</body>
+</html>
+

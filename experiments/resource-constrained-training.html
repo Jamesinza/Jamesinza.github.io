@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resource Constrained Training</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <h1>Resource Constrained Training</h1>
+  <p class="subtitle">
+    Designing learning systems for small machines, not idealized hardware.
+  </p>
+</header>
+
+<main>
+
+<section>
+  <h2>Context</h2>
+  <p>
+    Much ML research assumes access to large GPUs, massive RAM,
+    and uninterrupted runtime.
+  </p>
+  <p>
+    Independent researchers and non funded teams rarely have that luxury.
+  </p>
+</section>
+
+<section>
+  <h2>Principle</h2>
+  <p>
+    Constraints are not a limitation but a forcing function
+    for better system design.
+  </p>
+  <p>
+    This experiment focuses on training strategies that:
+  </p>
+  <ul>
+    <li>actively release memory</li>
+    <li>isolate training runs to avoid resource leakage</li>
+    <li>prioritize reproducibility over throughput</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Key Technique</h2>
+  <p>
+    Instead of sequential model training within a single process,
+    each training cycle runs in a subprocess.
+  </p>
+  <p>
+    When the subprocess exits, all memory is reclaimed reliably.
+    This avoids long-term accumulation issues common in deep learning frameworks.
+  </p>
+</section>
+
+<section>
+  <h2>Results</h2>
+  <p>
+    On a 32GB desktop system:
+  </p>
+  <ul>
+    <li>peak usage stayed under ~7GB</li>
+    <li>no degradation over dozens of training runs</li>
+    <li>system remained responsive throughout</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Why This Matters</h2>
+  <p>
+    If an idea only works on ideal hardware, it is fragile.
+  </p>
+  <p>
+    Robust learning systems should degrade gracefully in data, compute, and memory.
+  </p>
+</section>
+
+<footer>
+  <p><a href="../index.html">← Back to overview</a></p>
+</footer>
+
+</main>
+</body>
+</html>
+

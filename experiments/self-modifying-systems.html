@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Self Modifying Learning Systems</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <h1>Self Modifying Learning Systems</h1>
+  <p class="subtitle">
+    Models that change their own structure, not just their weights.
+  </p>
+</header>
+
+<main>
+
+<section>
+  <h2>Motivation</h2>
+  <p>
+    Gradient descent assumes a static computation graph.
+    Real adaptive systems do not.
+  </p>
+  <p>
+    This line of work explores learning systems that can modify
+    parts of their own architecture during training or inference.
+  </p>
+</section>
+
+<section>
+  <h2>What “Self Modifying” Means Here</h2>
+  <ul>
+    <li>re-weighting or re-routing internal pathways</li>
+    <li>altering readout strategies dynamically</li>
+    <li>changing how past information is reused</li>
+  </ul>
+  <p>
+    The goal is not neural architecture search, but <em>continuous structural plasticity</em>.
+  </p>
+</section>
+
+<section>
+  <h2>Key Hypothesis</h2>
+  <p>
+    Many failures attributed to “insufficient data” are actually failures
+    of fixed inductive bias.
+  </p>
+  <p>
+    Allowing limited, controlled self modification can produce
+    systems that adapt faster and degrade more gracefully.
+  </p>
+</section>
+
+<section>
+  <h2>Constraints</h2>
+  <p>
+    This work deliberately avoids:
+  </p>
+  <ul>
+    <li>expensive architecture search</li>
+    <li>black box evolutionary methods</li>
+    <li>unbounded growth of parameters</li>
+  </ul>
+  <p>
+    All modifications must be lightweight, interpretable, and reversible.
+  </p>
+</section>
+
+<section>
+  <h2>Status</h2>
+  <p>
+    Exploratory. Several mechanisms tested in controlled toy settings
+    before scaling to real data.
+  </p>
+</section>
+
+<footer>
+  <p><a href="../index.html">← Back to overview</a></p>
+</footer>
+
+</main>
+</body>
+</html>
+
