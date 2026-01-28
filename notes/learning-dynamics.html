@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Dynamics</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <h1>Learning Dynamics</h1>
+  <p class="subtitle">
+    What the loss curve does not tell you.
+  </p>
+</header>
+
+<main>
+
+<section>
+  <h2>Focus</h2>
+  <p>
+    This note is about how models learn,
+    not just what they converge to.
+  </p>
+</section>
+
+<section>
+  <h2>Observed Behaviors</h2>
+  <ul>
+    <li>early representation locking</li>
+    <li>sensitivity to initialization far beyond expectation</li>
+    <li>learning rate schedules acting as implicit regularizers</li>
+    <li>sudden phase transitions in internal structure</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Key Observation</h2>
+  <p>
+    Two models with identical final accuracy
+    can arrive there through radically different trajectories.
+  </p>
+  <p>
+    Those trajectories determine robustness.
+  </p>
+</section>
+
+<section>
+  <h2>Implication</h2>
+  <p>
+    Monitoring loss alone is insufficient.
+    Understanding learning dynamics is critical
+    for diagnosing instability and hidden brittleness.
+  </p>
+</section>
+
+<footer>
+  <p><a href="../index.html">← Back to overview</a></p>
+</footer>
+
+</main>
+</body>
+</html>
+

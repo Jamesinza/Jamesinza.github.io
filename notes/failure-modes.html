@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Failure Modes</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <h1>Failure Modes</h1>
+  <p class="subtitle">
+    Patterns of breakdown observed across experiments.
+  </p>
+</header>
+
+<main>
+
+<section>
+  <h2>Why Document Failure</h2>
+  <p>
+    Benchmarks hide failure.
+    Real systems reveal it.
+  </p>
+  <p>
+    This page captures recurring breakdown patterns that appear
+    when models are pushed outside idealized assumptions.
+  </p>
+</section>
+
+<section>
+  <h2>Common Failure Patterns</h2>
+  <ul>
+    <li>silent collapse of internal representations</li>
+    <li>overconfident predictions under distribution shift</li>
+    <li>emergent shortcuts that bypass intended structure</li>
+    <li>training dynamics that look stable until they are not</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Meta-Failure</h2>
+  <p>
+    Some of the most dangerous failures do not reduce loss or accuracy.
+    They reduce <em>meaningful learning</em> while preserving surface metrics.
+  </p>
+</section>
+
+<section>
+  <h2>Design Implication</h2>
+  <p>
+    Robust systems are not those that never fail,
+    but those whose failure modes are predictable and recoverable.
+  </p>
+</section>
+
+<footer>
+  <p><a href="../index.html">← Back to overview</a></p>
+</footer>
+
+</main>
+</body>
+</html>
+

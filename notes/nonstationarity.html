@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Non Stationarity</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <h1>Non-Stationarity</h1>
+  <p class="subtitle">
+    Most real world data is not stable. Most models assume it is.
+  </p>
+</header>
+
+<main>
+
+<section>
+  <h2>The Assumption Problem</h2>
+  <p>
+    Many learning algorithms implicitly assume that
+    the data-generating process is stationary.
+  </p>
+  <p>
+    In practice, environments drift, regimes shift,
+    and correlations decay.
+  </p>
+</section>
+
+<section>
+  <h2>Observed Effects</h2>
+  <ul>
+    <li>performance decay without clear warning signals</li>
+    <li>learned features becoming actively misleading</li>
+    <li>over fitting to transient patterns</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Key Insight</h2>
+  <p>
+    Non stationarity is not noise.
+    It is structure that moves.
+  </p>
+  <p>
+    Treating it as randomness guarantees delayed failure.
+  </p>
+</section>
+
+<section>
+  <h2>Research Direction</h2>
+  <p>
+    This motivates adaptive readouts, gating mechanisms,
+    and models that track uncertainty rather than suppress it.
+  </p>
+</section>
+
+<footer>
+  <p><a href="../index.html">← Back to overview</a></p>
+</footer>
+
+</main>
+</body>
+</html>
+
